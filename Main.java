@@ -2,31 +2,48 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Veiculo v = new Veiculo();
-        Carro c = new Carro(4, null, 40);
-        Bicicleta b = new Bicicleta();
+        Veiculo v = new Veiculo(null, 0, "Azul", false);
+        Carro c = new Carro(4, "Forjada", 40);
+        Moto m = new Moto(150, "Gasolina", "Pastilha");
+        Onibus o = new Onibus(100, 5, 30);
+        Bicicleta b = new Bicicleta(11, "Hidraulico", "MTB");
         
-        v.ligar();
-        v.desligar();
-        v.acelerar();
-        v.frear();
-        //V.ligarFarol();
-        //V.AbrirTeto();
+        v.Ligar();
+        v.Desligar();
+        v.Acelerar();
+        v.Freiando();
+        v.Virar();
+        
+        c.Ligar();
+        c.Desligar();
+        c.Acelerar();
+        c.Freiando();
+        //c.Ligarfarol();
+        //c.Desligandofarol;
+        //c.Fechandoteto();
+        //c.Abrirteto();
 
-        c.ligar();
-        c.desligar();
-        c.acelerar();
-        c.frear();
-        c.ligarFarol();
-        c.AbrirTeto();
-        //c.pedalar();
-        //c.parar();
+        m.Ligarmoto();
+        m.Desligar();
+        m.Acelerar();
+        m.Freiando();
+        m.Virar();
+        //m.Mdesportivo();
 
-        b.ligar();
-        b.desligar();
-        b.acelerar();
-        b.frear();
-        //V.ligarFarol();
-        //V.AbrirTeto();
+        o.Ligar();
+        o.Desligar();
+        o.Acelerar();
+        o.Freiando();
+        o.Virar();
+        o.Entrar();
+        //o.CapaPss;
+        //o.Nparadas;
+        //o.Portas;
+
+        
+        b.Pedalar();
+        b.Parar();
+        //b.Bike;
+       
     }
 }

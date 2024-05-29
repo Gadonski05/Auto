@@ -6,6 +6,7 @@ public class Moto extends Veiculo{
     private String tipoFreio;
 
     public Moto(int Cilindradas, String tipoCombustivel, String tipoFreio){
+        super(tipoFreio, Cilindradas, tipoCombustivel, ligar);
 
         this.Cilindradas = Cilindradas;
         this.tipoCombustivel = tipoCombustivel;
@@ -25,6 +26,22 @@ public class Moto extends Veiculo{
     public String getTipofreio(){
 
         return tipoFreio;
+    }
+    
+
+    public void setCilindradas(int cilindradas) {
+
+        Cilindradas = cilindradas;
+    }
+
+    public void setTipoCombustivel(String tipoCombustivel) {
+
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
+    public void setTipoFreio(String tipoFreio) {
+
+        this.tipoFreio = tipoFreio;
     }
 
     public void Mot(){

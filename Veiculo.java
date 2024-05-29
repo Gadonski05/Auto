@@ -3,15 +3,15 @@ public class Veiculo {
     private String modelo;
     private int ano;
     //Essa classe tem acesso e os filhos dessa classe também podem acessar
-    protected String cor;
-    private boolean ligar;
+    protected static String cor;
+    protected static boolean ligar;
  
     public Veiculo(String modelo, int ano, String cor, boolean ligado){
  
      this.modelo = modelo;
      this.ano = ano;
-     this.cor = cor;
-     this.ligar = false;
+     Veiculo.cor = cor;
+     Veiculo.ligar = false;
  
     }
  
@@ -30,9 +30,27 @@ public class Veiculo {
      return cor;
  }
  
- public void Ligar(){
+ public void setModelo(String modelo) {
+    this.modelo = modelo;
+}
+
+public void setAno(int ano) {
+    this.ano = ano;
+}
+
+public void setCor(String cor) {
+
+    Veiculo.cor = cor;
+}
+
+public void setLigar(boolean ligar) {
+    
+    Veiculo.ligar = ligar;
+}
+
+public void Ligar(){
  
-     this.ligar = true;
+     Veiculo.ligar = true;
  
      System.out.println("Ligando o veiculo!!");
  }
